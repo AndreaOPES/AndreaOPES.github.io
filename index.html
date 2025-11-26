@@ -344,12 +344,16 @@
                   type="email"
                   name="email"
                   placeholder="you@freelance.studio"
+                  autocomplete="email"
                   required
                 />
                 <button type="submit">Join waitlist →</button>
               </div>
 
-              <!-- Optional extra metadata for Formspree-style services -->
+              <!-- Honeypot field for bots -->
+              <input type="text" name="_gotcha" style="display:none">
+
+              <!-- Optional extra metadata -->
               <input type="hidden" name="_subject" value="New OPEX waitlist signup">
               <input type="hidden" name="source" value="github-landing">
 
